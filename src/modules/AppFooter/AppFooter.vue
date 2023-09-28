@@ -34,6 +34,7 @@ const currentYear = ref(new Date().getFullYear())
 <style scoped lang="sass">
 .footer
   margin-top: 164px
+  padding-bottom: 32px
 
   &__header
     display: flex

@@ -1,6 +1,6 @@
 <template>
   <InlineSvg v-if="props.src.includes('.svg')" :src="props.src"></InlineSvg>
-  <img v-else :src="props.src" :alt="props.alt" />
+  <img v-else :src="props.src" :draggable="props.draggable" :alt="props.alt" />
 </template>
 
 <script setup lang="ts">
@@ -14,6 +14,11 @@ const props = defineProps({
 
   alt: {
     type: String,
+  },
+
+  draggable: {
+    type: Boolean,
+    default: true,
   },
 })
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <Image src="./images/phone.png" class="product__image" />
+    <Image src="./images/phone.png" :draggable="false" class="product__image" />
 
     <div class="product__info">
       <Image src="./images/telegram-bot.svg" class="product__icon" />
@@ -39,6 +39,7 @@ import Button from '@/ui/Button.vue'
 
   &__image
     max-height: 508px
+    user-select: none
 
   &__info
     display: flex
